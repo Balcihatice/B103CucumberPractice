@@ -23,8 +23,10 @@ public class Driver {
             //return den driver ayni pencerede calisir
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
+                    ChromeOptions co = new ChromeOptions();
+                    co.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(co);
                     break;
                 case "safari":
                     WebDriverManager.safaridriver().setup();

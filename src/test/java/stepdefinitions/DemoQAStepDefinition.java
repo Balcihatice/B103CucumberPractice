@@ -56,4 +56,6 @@ public class DemoQAStepDefinition {
     public void kullaniciOkDiyerekAlertiKapatir() {
         Driver.getDriver().switchTo().alert().accept();
     }
+
+
 }

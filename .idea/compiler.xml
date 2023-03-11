@@ -9,5 +9,8 @@
         <module name="B103CucumberPractice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="B103CucumberPractice" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
