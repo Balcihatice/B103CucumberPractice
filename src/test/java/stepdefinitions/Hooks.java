@@ -32,18 +32,17 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(Scenario scenario){ //Scenario tipinde bir parametre ataması yapılır
-    final byte[] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-    if(scenario.isFailed()){
-        scenario.attach(screenshot,"image/jpeg","screenshot");
+    public void tearDown(Scenario scenario) { //Scenario tipinde bir parametre ataması yapılır
+        final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+        if (scenario.isFailed()) {
+            scenario.attach(screenshot, "image/jpeg", "screenshot");
+        }
+        Driver.closeDriver();
     }
-    Driver.closeDriver();
     //final -> bir değişkenin değerinin değiştirilemez olduğunu belirtir
     //byte[]-> bir byte dizisi tanımlar. Byte dizeleri, sıralı veri depolama ve işleme işlemleri için
     //kullanılır.Verilerin depolanması, iletilmesi ve okunması için kullanılan çeşitli dosya türleri,
     //resimler ve diğer verileri saklamak için kullanılır.
-    }
-
 
 
 }

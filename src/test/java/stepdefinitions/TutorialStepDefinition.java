@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TutorialStepDefinition {
+public class  TutorialStepDefinition {
     NinjaPage ninjaPage = new NinjaPage();
     List<String> sayfadakiList = new ArrayList<String>();
     List<String> sepettekiList = new ArrayList<String>();

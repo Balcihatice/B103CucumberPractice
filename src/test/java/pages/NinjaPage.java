@@ -7,7 +7,7 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class NinjaPage {
+public class   NinjaPage {
     public NinjaPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }

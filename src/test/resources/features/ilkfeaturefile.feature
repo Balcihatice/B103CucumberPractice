@@ -6,7 +6,7 @@ Feature: ilk feature file
     When kullanici iphone için arama yapar
     Then sayfa basliginin iphone icerdigini test eder
 
-  @g2
+  @gp1
   Scenario: TC02_amazon_selenium_arama
     Given kullanici amazona gider
     When kullanici selenium için arama yapar
